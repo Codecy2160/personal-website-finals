@@ -1,6 +1,8 @@
 <script setup>
   import { ref, onMounted } from 'vue'
   import { supabase } from './lib/supabaseClient'
+  import PersonalProfile from './components/PersonalProfile.vue';
+  import Navbar from './components/Navbar.vue';
 
   const instruments = ref([])
 
@@ -15,10 +17,11 @@
 </script>
 
 <template>
+  <Navbar />
   <ul>
     <li v-for="instrument in instruments" :key="instrument.id">{{ instrument.name }}</li>
   </ul>
-  <PersonalProfile />
+  <router-view />
 </template>
 
 <style></style>

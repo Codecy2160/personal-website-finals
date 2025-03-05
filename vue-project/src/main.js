@@ -1,10 +1,7 @@
-import { createApp } from 'vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './index.js'; // Import the router
 
-import App from './App.vue'
-import RestAPI from './components/RestAPI.vue'
-import PersonalProfile from './components/PersonalProfile.vue'
-
-const app = createApp(App)
-app.component('PersonalProfile', PersonalProfile)
-app.component('RestAPI', RestAPI)
-app.mount('#app')
+createApp(App)
+  .use(router) // Use the router
+  .mount('#app');

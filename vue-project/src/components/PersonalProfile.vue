@@ -21,7 +21,7 @@ import CommentForm from './CommentForm.vue';
 import CommentList from './CommentList.vue';
 
 export default {
-  namer: 'PersonalProfile',
+  name: 'PersonalProfile',
   components: {
     Navbar,
     AboutSection,
@@ -33,7 +33,9 @@ export default {
     const aboutSection = ref(null);
 
     const scrollToAbout = () => {
-      aboutSection.value?.scrollIntoView({ behavior: 'smooth' });
+      const navbarHeight = document.querySelector('.navbar').offsetHeight;
+      const aboutSectionTop = aboutSection.value.$el.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: aboutSectionTop - navbarHeight, behavior: 'smooth' });
     };
 
     return {
