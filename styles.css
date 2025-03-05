@@ -1,0 +1,377 @@
+* {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background-color: #0a0a0a;
+    background-image: url('source/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -50px;
+    position: relative;
+    z-index: 0;
+    color: #f6f3ef;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #121212;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    color: #f6f3ef;
+}
+
+#navbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar-logo img{
+    width: 15%;
+    height: auto;
+    margin-right: auto;
+}
+
+#logo {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Center the div horizontally */
+    margin-top: 15vh; /* Add some space at the top */
+}
+
+#logo img{
+    padding-top: 5vh;
+    width: 50vw;
+    height: auto;
+}
+
+.main-button {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    margin: 4px auto;
+    margin-bottom: 20vh;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    z-index: 900;
+}
+
+#about {
+    background: linear-gradient(to bottom, rgba(10,10,10,0) 0%, rgba(10,10,10,1) 50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2vh;
+    color: white;
+    text-shadow: 0 0 10px black; /* Add black outer glow to text */
+}
+
+.about-content {
+    background: rgba(255, 255, 255, 0.8); /* Translucent white background */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+h1.display-4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+}
+
+#carousel {
+    width: 300px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2vh;
+    color: #f6f3ef;
+}
+
+#carousel img {
+    height: 300px; /* Set a uniform height for all images */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+#carousel button {
+    border: none;
+    color: #f6f3ef;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    margin: 0 20px; /* Keep distance between buttons static */
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.caorusel-control-prev {
+    float: left;
+}
+
+.caorusel-control-next {
+    float: right;
+}
+
+#carousel-item img {
+    width: 50vw;
+    height: auto;
+    margin: 2vh 0;
+}
+
+.carousel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scale the images to cover the container */
+}
+
+.main-button {
+    background-color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    margin: 4px auto;
+    margin-bottom: 20vh;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    z-index: 900;
+}
+
+#software {
+    display: inline-flexbox;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+}
+
+#github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2vh;
+    color: #f6f3ef;
+}
+
+.github-card {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.profile-card {
+    background-color: #f6f3ef;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 15vh;
+}
+
+.repo-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+}
+
+#github::after {
+    padding-bottom: 15vh;
+}
+
+#shaper-playfield {
+    display: flex;
+    flex-direction: row; /* Ensure elements are in a row */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Add spacing between input and output */
+    margin-top: 2vh;
+    color: #f6f3ef;
+}
+
+#shaper-input, #shaper-output {
+    display: inline-block; /* Make them inline */
+    width: 40%; /* Adjust width as needed */
+    min-height: 20vh;
+    padding: 10px;
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#shaper-input {
+    background-color: #f6f3ef; /* Light background for input */
+    color: #0a0a0a; /* Dark text for contrast */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+#shaper-output {
+    background-color: #0a0a0a; /* Dark background for output */
+    color: #f6f3ef; /* Light text for contrast */
+    border-radius: 10px;
+    text-shadow: black 0 0 10px;
+}
+
+.container {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f6f3ef; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 17.5vh;
+}
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-form h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-primary {
+    background-color: #0a0a0a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #121212;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .container {
+      margin: 20px auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      margin: 10px auto;
+    }
+    .form-control {
+      padding: 5px;
+    }
+    .btn-primary {
+      padding: 5px 10px;
+    }
+  }
+
+  .masonry-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15vh;
+    color:#f6f3ef;
+    text-shadow: 0 0 10px black;
+  }
+  
+  .grid-sizer {
+    width: 33.33%;
+    margin-top: -40vh
+  }
+  
+  .gutter-sizer {
+    width: 10px;
+  }
+  
+  .masonry-item {
+    width: calc(33.33% - 10px);
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .masonry-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
