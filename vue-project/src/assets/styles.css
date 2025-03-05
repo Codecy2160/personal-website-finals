@@ -6,7 +6,7 @@
 
 body {
     background-color: #0a0a0a;
-    background-image: url('source/background.jpg');
+    background-image: url('https://github.com/Codecy2160/personal-website-finals/blob/main/source/background.jpg?raw=true');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center -50px;
@@ -275,103 +275,48 @@ h1.display-4 {
     margin-top: 17.5vh;
 }
   
-  .contact-form {
+.comment-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .contact-form h1 {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  .form-control {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form-control:focus {
-    outline: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .btn-primary {
-    background-color: #0a0a0a;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-  }
-  
-  .btn-primary:hover {
-    background-color: #121212;
-  }
-  
-  /* Responsive Design */
-  
-  @media (max-width: 768px) {
-    .container {
-      margin: 20px auto;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .container {
-      margin: 10px auto;
-    }
-    .form-control {
-      padding: 5px;
-    }
-    .btn-primary {
-      padding: 5px 10px;
-    }
-  }
+    gap: 10px;
+}
 
-  .masonry-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 15vh;
-    color:#f6f3ef;
-    text-shadow: 0 0 10px black;
-  }
-  
-  .grid-sizer {
-    width: 33.33%;
-    margin-top: -40vh
-  }
-  
-  .gutter-sizer {
-    width: 10px;
-  }
-  
-  .masonry-item {
-    width: calc(33.33% - 10px);
-    margin: 10px;
-    display: inline-block;
-    vertical-align: top;
-  }
-  
-  .masonry-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+.comment-form h2 {
+  color: white;
+}
+
+.comment-form label {
+  color: white;
+}
+
+.masonry-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15vh;
+  color:#f6f3ef;
+  text-shadow: 0 0 10px black;
+}
+
+.grid-sizer {
+  width: 33.33%;
+  margin-top: -40vh
+}
+
+.gutter-sizer {
+  width: 10px;
+}
+
+.masonry-item {
+  width: calc(33.33% - 10px);
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

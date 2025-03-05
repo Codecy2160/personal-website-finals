@@ -23,25 +23,28 @@
         </div>
         <div class="row mt-4">
             <div class="col-12">
-                <CarouselComponent :images="carouselImages" />
+                <Carousel :images="carouselImages" />
             </div>
         </div>
     </section>
 </template>
   
 <script>
-    import CarouselComponent from './Carousel.vue';
+    import Carousel from './Carousel.vue';
     export default {
         name: "AboutSection",
+        components: {
+            Carousel,
+        },
         data() {
-        return {
-            carouselImages: [
-            { src: "https://codecy2160.github.io/codecy/source/bug_of_some_kind.png" },
-            { src: "https://codecy2160.github.io/codecy/source/hes_floating_around.png" },
-            { src: "https://codecy2160.github.io/codecy/source/LETSGOOO.png" },
-            { src: "https://codecy2160.github.io/codecy/source/OC_1_2.png" },
-            { src: "https://codecy2160.github.io/codecy/source/OC_2_2.png" },
-            ]
+            return {
+                carouselImages: [
+                { src: "https://codecy2160.github.io/codecy/source/bug_of_some_kind.png" },
+                { src: "https://codecy2160.github.io/codecy/source/hes_floating_around.png" },
+                { src: "https://codecy2160.github.io/codecy/source/LETSGOOO.png" },
+                { src: "https://codecy2160.github.io/codecy/source/OC_1_2.png" },
+                { src: "https://codecy2160.github.io/codecy/source/OC_2_2.png" },
+                ]
         }
     }
   }

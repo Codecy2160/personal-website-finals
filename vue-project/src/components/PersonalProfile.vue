@@ -6,8 +6,6 @@
     </div>
     <button @click="scrollToAbout" class="main-button">About Me</button>
     <AboutSection ref="aboutSection" />
-    <RestAPI />
-    <Carousel />
     <CommentForm />
     <CommentList />
     <FooterComponent />
@@ -18,11 +16,9 @@
 import { ref } from 'vue';
 import Navbar from './Navbar.vue';
 import AboutSection from './AboutSection.vue';
-import Carousel from './Carousel.vue';
 import FooterComponent from './Footer.vue';
 import CommentForm from './CommentForm.vue';
 import CommentList from './CommentList.vue';
-import RestAPI from './RestAPI.vue';
 
 export default {
   namer: 'PersonalProfile',
@@ -32,7 +28,6 @@ export default {
     FooterComponent,
     CommentForm,
     CommentList,
-    RestAPI,
   },
   setup() {
     const aboutSection = ref(null);

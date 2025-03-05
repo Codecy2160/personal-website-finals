@@ -20,7 +20,7 @@
 
 <script>
     export default {
-        name: "CarouselComponent",
+        name: "Carousel",
         props: {
             images: {
             type: Array,

@@ -17,7 +17,7 @@
         data() {
             return {
                 currentYear: new Date().getFullYear(),
-                siteName: "Your Website Name",
+                siteName: "Codecy",
                 footerLinks: [{
                     text: "Privacy Policy",
                     url: "/privacy-policy"
