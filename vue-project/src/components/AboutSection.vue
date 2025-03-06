@@ -52,5 +52,8 @@
   
 <style scoped>
     @import '@/assets/styles.css';
+    h1 h2 p {
+        color: white;
+    }
 </style>
   
