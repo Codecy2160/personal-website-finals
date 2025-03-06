@@ -30,6 +30,7 @@
         name: '',
         email: '',
         message: '',
+        subject: '',
         successMessage: '',
         errorMessage: '',
       };
@@ -41,9 +42,9 @@
           return;
         }
   
-        const { data, error } = await supabase
+        const { error } = await supabase
           .from('comments')
-          .insert([{ name: this.name, email: this.email, message: this.message }]);
+          .insert([{ name: this.name, email: this.email, message: this.message, subject: this.subject }]);
   
         if (error) {
           this.errorMessage = 'Failed to submit comment. Please try again.';
@@ -53,6 +54,7 @@
           this.name = '';
           this.email = '';
           this.message = '';
+          this.subject = '';
         }
       },
     },
@@ -61,7 +63,7 @@
   
   <style scoped>
   .comment-form {
-    max-width: 400px;
+    max-width: 80%;
     margin: 0 auto;
   }
   label {

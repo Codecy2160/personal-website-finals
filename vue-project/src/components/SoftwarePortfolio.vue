@@ -17,11 +17,17 @@
             </div>
         </div>
     </div>
+    <FooterComponent/>
 </template>
 
 <script>
+import FooterComponent from './Footer.vue';
+
 export default {
     name: 'SoftwarePortfolio',
+    components: {
+        FooterComponent,
+    },
     data() {
         return {
             shapedText: '',

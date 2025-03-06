@@ -6,8 +6,10 @@
     </div>
     <button @click="scrollToAbout" class="main-button">About Me</button>
     <AboutSection ref="aboutSection" />
-    <CommentForm />
-    <CommentList />
+    <div class="comments-container">
+      <CommentForm />
+      <CommentList />
+    </div>
     <FooterComponent />
   </div>
 </template> 
@@ -49,4 +51,16 @@ export default {
 <style>
 @import 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css';
 @import 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap';
+
+.comments-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px;
+  width: 80%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>

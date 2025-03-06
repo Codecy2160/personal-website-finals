@@ -46,7 +46,6 @@
   <style scoped>
   .comment-list {
     max-width: 600px;
-    margin: 20px auto;
   }
   .comment {
     border-bottom: 1px solid #ddd;

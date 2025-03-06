@@ -187,10 +187,9 @@ h1.display-4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row; /* Change to row to align items horizontally */
-    margin-top: 17vh;
+    flex-direction: row;
+    margin-top: 2vh;
     color: #f6f3ef;
-    gap: 20px; /* Add spacing between items */
 }
 
 .github-card {
@@ -237,7 +236,7 @@ h1.display-4 {
 
 #shaper-input, #shaper-output {
     display: inline-block; /* Make them inline */
-    min-width: 30vw; /* Adjust width as needed */
+    width: 40%; /* Adjust width as needed */
     min-height: 20vh;
     padding: 10px;
     overflow-wrap: anywhere;
@@ -255,55 +254,15 @@ h1.display-4 {
     color: #0a0a0a; /* Dark text for contrast */
     border-radius: 10px;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    gap: 10px; /* Add spacing between input and button */
-}
-
-#input-field {
-    width: 100%; /* Full width */
-    height: 30vh; /* Set a fixed height */
-    padding: 10px; /* Add padding */
-    border: 1px solid #0a0a0a; /* Add border */
-    border-radius: 5px; /* Rounded corners */
-    box-sizing: border-box; /* Include padding in width */
-    text-align: center; /* Center text horizontally */
-    padding-top: calc(5vh - 10px); /* Center text vertically */
-}
-
-#shaper-button {
-    background-color: #0a0a0a;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 1.5rem;
-    margin: 4px auto;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    z-index: 900;
-    cursor: pointer; /* Add pointer cursor */
-    transition-duration: 0.4s; /* Smooth transition */
 }
 
 #shaper-output {
-  background-color: #0a0a0a; /* Dark background for output */
-  color: #f6f3ef; /* Light text for contrast */
-  border-radius: 10px;
-  text-shadow: black 0 0 10px;
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-}
-
-#shaper-output p {
-  text-align: center;
-  white-space: pre-line; /* Preserve line breaks */
+    background-color: #0a0a0a; /* Dark background for output */
+    color: #f6f3ef; /* Light text for contrast */
+    border-radius: 10px;
+    text-shadow: black 0 0 10px;
 }
 
 .container {
@@ -320,6 +279,22 @@ h1.display-4 {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%; /* Maximize width usage */
+}
+
+.comment-form h2, .comment-form label, .comment-form p {
+    color: white; /* Use white for headers, labels, and paragraphs */
+}
+
+.comment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; /* Maximize width usage */
+}
+
+.comment-list h2, .comment-list p {
+    color: white; /* Use white for headers and paragraphs */
 }
 
 .comment-form h2 {

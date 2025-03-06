@@ -26,11 +26,17 @@
             </div>
         </div>
     </div>
+    <FooterComponent/>
 </template>
 
 <script>
+import FooterComponent from './Footer.vue';
+
 export default {
     name: 'ContactPage',
+    components: {
+        FooterComponent,
+    },
     data() {
         return {
             name: '',

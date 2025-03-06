@@ -32,11 +32,17 @@
             <img src="https://codecy2160.github.io/codecy/source/portfolio/chowdhury.png" alt="Photo 9">
         </div>
     </div>
+    <FooterComponent/>
 </template>
 
 <script>
+import FooterComponent from './Footer.vue';
+
 export default {
-    name: 'DesignPortfolio'
+    name: 'DesignPortfolio',
+    components: {
+        FooterComponent,
+    }
 }
 </script>
 
