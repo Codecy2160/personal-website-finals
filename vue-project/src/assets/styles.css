@@ -175,12 +175,36 @@ h1.display-4 {
     z-index: 900;
 }
 
+#shaper-button {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    margin: 4px auto;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    z-index: 900;
+}
+
+#shaper-button:hover {
+    background-color: #f6f3ef;
+    color: #0a0a0a;
+}
+
 #software {
     display: inline-flexbox;
     justify-content: left;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 2vh;
+    margin-top: 13vh;
 }
 
 #github {
@@ -190,6 +214,7 @@ h1.display-4 {
     flex-direction: row;
     margin-top: 2vh;
     color: #f6f3ef;
+    gap: 20px;
 }
 
 .github-card {
@@ -254,8 +279,22 @@ h1.display-4 {
     color: #0a0a0a; /* Dark text for contrast */
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
+}
+
+#input-field {
+    width: 100%; /* Full width */
+    min-height: 17vh; /* Set a fixed height */
+    padding: 10px; /* Add padding */
+    border: 1px solid #0a0a0a; /* Add border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+    text-align: center; /* Center text horizontally */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
 }
 
 #shaper-output {
@@ -263,6 +302,39 @@ h1.display-4 {
     color: #f6f3ef; /* Light text for contrast */
     border-radius: 10px;
     text-shadow: black 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text inside */
+}
+
+@media screen and (max-width: 768px) {
+  #software {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #github {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #shaper-playfield {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    margin-left: auto; /* Move burger menu to the right */
+    align-self: center; /* Vertically align to the center */
+    justify-content: center; /* Center content horizontally */
+  }
+
+  #navbar-logo img {
+    width: 100px; /* Static width for logo */
+    height: auto;
+  }
 }
 
 .container {

@@ -8,7 +8,7 @@
         </div>
         <div id="shaper-playfield">
             <div id="shaper-input">
-                <input type="text" id="input-field" class="expand-input" placeholder="Enter text here">
+                <input type="text" id="input-field" class="expand-input" v-model="inputText" placeholder="Enter Text Here">
                 <button @click="shapeText()" id="shaper-button">Shape Text</button>
             </div>
             <div id="shaper-output">
@@ -45,7 +45,7 @@ export default {
         },
         shapeText() {
             // get text from input field
-            let text = this.$el.querySelector('#input-field').value;
+            let text = this.inputText;
             let split = text.split(' ');
             let totalLen = 0;
             let extreme = 0;
