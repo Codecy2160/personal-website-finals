@@ -346,6 +346,10 @@ h1.display-4 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 17.5vh;
 }
+
+.container p {
+    color: #0a0a0a;
+}
   
 .comment-form {
     display: flex;
